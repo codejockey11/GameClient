@@ -1,0 +1,11 @@
+.vs/*
+audio/*
+GameClient/*
+image/*
+model/*
+packages/*
+terrain/*
+x64/*
+*.exe
+*.dll
+*.txt
