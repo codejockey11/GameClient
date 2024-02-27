@@ -51,9 +51,9 @@ CTerrain::CTerrain(CVideoDevice* videoDevice, CErrorLog* errorLog, CTextureManag
 	m_texture0 = textureManager->Create("image\\grass_03_d.tga");
 	m_texture1 = textureManager->Create("image\\rock_01_d.tga");
 	m_texture2 = textureManager->Create("image\\dirt_01_d.tga");
-	m_texture3 = textureManager->Create("image\\mask1.bmp");
-	m_texture4 = textureManager->Create("image\\mask2.bmp");
-	m_texture5 = textureManager->Create("image\\lightmap.bmp");
+	m_texture3 = textureManager->Create("terrain\\mask1.bmp");
+	m_texture4 = textureManager->Create("terrain\\mask2.bmp");
+	m_texture5 = textureManager->Create("terrain\\lightmap.bmp");
 
 	m_shaderHeap->SlotResource(0, m_wvp);
 	m_shaderHeap->SlotResource(1, m_floats);

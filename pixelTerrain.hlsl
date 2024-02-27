@@ -95,15 +95,15 @@ float CalcShadowFactor(float4 shadowPosH)
 
 float4 PSMain(SPixel vs) : SV_Target0
 {
-	float4 p = texture0.Sample(wrap, vs.uv * 8);
+	float4 p = texture0.Sample(wrap, vs.uv * 128);
 
 	p.a = 1.0;
 
-	return p;
+	//return p;
 
 	float pa = p.a;
 
-	//p *= 0.75;
+	p *= 0.75;
 
 	float4 maskMap1 = texture3.Sample(wrap, vs.uv);
 
@@ -112,7 +112,7 @@ float4 PSMain(SPixel vs) : SV_Target0
 		float b1 = 1.0 - maskMap1.r;
 		float b2 = 1.0 - b1;
 
-		float4 ts = texture1.Sample(wrap, vs.uv);
+		float4 ts = texture1.Sample(wrap, vs.uv * 128);
 
 		p.r = (p.r * b1) + (ts.r * b2);
 		p.g = (p.g * b1) + (ts.g * b2);
@@ -126,7 +126,7 @@ float4 PSMain(SPixel vs) : SV_Target0
 		float b1 = 1.0 - maskMap2.r;
 		float b2 = 1.0 - b1;
 
-		float4 ts = texture2.Sample(wrap, vs.uv);
+		float4 ts = texture2.Sample(wrap, vs.uv * 256);
 
 		p.r = (p.r * b1) + (ts.r * b2);
 		p.g = (p.g * b1) + (ts.g * b2);
@@ -134,7 +134,7 @@ float4 PSMain(SPixel vs) : SV_Target0
 	}
 
 	// if using lightmap
-	p *= texture5.Sample(wrap, vs.uv);
+	//p *= texture5.Sample(wrap, vs.uv);
 
 	p.a = pa;
 
