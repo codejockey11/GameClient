@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fe0e380a-eae7-492a-8f51-1ba6ea35ceda}</ProjectGuid>
+    <RootNamespace>GameClient</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include;C:\Program Files\MySQL\MySQL Server 8.0\include;C:\Users\junk_\source\repos\vcpkg-master\buildtrees\curl\src\url-7_86_0-3d3d4aefd3.clean\include;C:\Users\junk_\source\repos\zlib-1.3.1\out\build\x64-Debug;C:\Users\junk_\source\repos\zlib-1.3.1</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;C:\Program Files\MySQL\MySQL Server 8.0\lib;C:\Users\junk_\source\repos\vcpkg-master\buildtrees\curl\x64-windows-rel\lib;C:\Users\junk_\source\repos\GameCommon\x64\Debug;C:\Users\junk_\source\repos\zlib-1.3.1\out\build\x64-Debug</LibraryPath>
+    <ReferencePath>$(ReferencePath);</ReferencePath>
+    <ExecutablePath>$(ExecutablePath);$(CommonExecutablePath)</ExecutablePath>
+    <PublicModuleDirectories>$(PublicModuleDirectories)</PublicModuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include;C:\Program Files\MySQL\MySQL Server 8.0\include;C:\Users\junk_\source\repos\vcpkg-master\buildtrees\curl\src\url-7_86_0-3d3d4aefd3.clean\include;C:\Users\junk_\source\repos\zlib-1.3.1\out\build\x64-Debug;C:\Users\junk_\source\repos\zlib-1.3.1</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;C:\Program Files\MySQL\Connector C++ 8.0\lib64\vs14;C:\Program Files\MySQL\MySQL Server 8.0\lib;C:\Users\junk_\source\repos\vcpkg-master\buildtrees\curl\x64-windows-rel\lib;C:\Users\junk_\source\repos\GameCommon\x64\Release;C:\Users\junk_\source\repos\zlib-1.3.1\out\build\x64-Debug</LibraryPath>
+    <ReferencePath>$(ReferencePath);</ReferencePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>xD3D11on12;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AssemblyDebug>true</AssemblyDebug>
+      <AdditionalDependencies>CBmpImage.obj;CBrush.obj;CBrushSide.obj;CBrushSideIntersection.obj;CCamera.obj;CCollision.obj;CCollisionPrimitive.obj;CColor.obj;CComError.obj;CCommandLine.obj;CDebugLog.obj;CDirectoryList.obj;CDXGIError.obj;CDXGIErrorItem.obj;CEntity.obj;CErrorLog.obj;CFrametime.obj;CHeap.obj;CHeapAllocator.obj;CHeapArray.obj;CHttpRequest.obj;CKeyValue.obj;CLine3D.obj;CList.obj;CListNode.obj;CLobbyServerInfo.obj;CLocal.obj;CMesh.obj;CModel.obj;CModelManager.obj;CMySql.obj;CNetwork.obj;CPlane.obj;CPngChunk.obj;CPngHeader.obj;CPngImage.obj;CRawImage.obj;CRGBColor.obj;CScript.obj;CSector.obj;CServerInfo.obj;CShaderMaterial.obj;CSocket.obj;CString.obj;CTerrainTile.obj;CTgaImage.obj;CTimer.obj;CVec2f.obj;CVec3f.obj;CVec3i.obj;CVertex.obj;CVertex2D.obj;CVertexNT.obj;CVertexRGBA.obj;CVertexT.obj;CWebBrowser.obj;CWindow.obj;CWinsockError.obj;CWinsockErrorItem.obj;CXAudio2Error.obj;CXAudio2ErrorItem.obj;CXML.obj;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderModel>6.5</ShaderModel>
+      <AdditionalOptions>-Qembed_debug</AdditionalOptions>
+      <ShaderType>Library</ShaderType>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>xD3D11on12;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CBmpImage.obj;CBrush.obj;CBrushSide.obj;CBrushSideIntersection.obj;CCamera.obj;CCollision.obj;CCollisionPrimitive.obj;CColor.obj;CComError.obj;CCommandLine.obj;CDebugLog.obj;CDirectoryList.obj;CDXGIError.obj;CDXGIErrorItem.obj;CEntity.obj;CErrorLog.obj;CFrametime.obj;CHeap.obj;CHeapAllocator.obj;CHeapArray.obj;CHttpRequest.obj;CKeyValue.obj;CLine3D.obj;CList.obj;CListNode.obj;CLobbyServerInfo.obj;CLocal.obj;CMesh.obj;CModel.obj;CModelManager.obj;CMySql.obj;CNetwork.obj;CPlane.obj;CPngChunk.obj;CPngHeader.obj;CPngImage.obj;CRawImage.obj;CRGBColor.obj;CScript.obj;CSector.obj;CServerInfo.obj;CShaderMaterial.obj;CSocket.obj;CString.obj;CTerrainTile.obj;CTgaImage.obj;CTimer.obj;CVec2f.obj;CVec3f.obj;CVec3i.obj;CVertex.obj;CVertex2D.obj;CVertexNT.obj;CVertexRGBA.obj;CVertexT.obj;CWebBrowser.obj;CWindow.obj;CWinsockError.obj;CWinsockErrorItem.obj;CXAudio2Error.obj;CXAudio2ErrorItem.obj;CXML.obj;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderType>Library</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>6.5</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CBoundBox.h" />
+    <ClInclude Include="CButton.h" />
+    <ClInclude Include="CButtonManager.h" />
+    <ClInclude Include="CClient.h" />
+    <ClInclude Include="CCommandAllocator.h" />
+    <ClInclude Include="CCommandListGroup.h" />
+    <ClInclude Include="CConsole.h" />
+    <ClInclude Include="CDXGINames.h" />
+    <ClInclude Include="CFont.h" />
+    <ClInclude Include="CFontManager.h" />
+    <ClInclude Include="CD3D11On12.h" />
+    <ClInclude Include="CDepthBuffer.h" />
+    <ClInclude Include="CGlyphFixed.h" />
+    <ClInclude Include="CGlyphText.h" />
+    <ClInclude Include="CGlyphTextResource.h" />
+    <ClInclude Include="CGlyphVariable.h" />
+    <ClInclude Include="CGlyphVertices.h" />
+    <ClInclude Include="CLight.h" />
+    <ClInclude Include="CMap.h" />
+    <ClInclude Include="CPanel.h" />
+    <ClInclude Include="CImage.h" />
+    <ClInclude Include="CIndexBuffer.h" />
+    <ClInclude Include="CKeyboardDevice.h" />
+    <ClInclude Include="CKeyMap.h" />
+    <ClInclude Include="CMouseDevice.h" />
+    <ClInclude Include="CObject.h" />
+    <ClInclude Include="COverhead.h" />
+    <ClInclude Include="CPipelineState.h" />
+    <ClInclude Include="CDescriptorRange.h" />
+    <ClInclude Include="CPlayer.h" />
+    <ClInclude Include="CPointer.h" />
+    <ClInclude Include="CRenderTarget.h" />
+    <ClInclude Include="CRootParameter.h" />
+    <ClInclude Include="CRootSignature.h" />
+    <ClInclude Include="CShader.h" />
+    <ClInclude Include="CShaderBinary.h" />
+    <ClInclude Include="CShaderBinaryManager.h" />
+    <ClInclude Include="CShaderHeap.h" />
+    <ClInclude Include="CShadowMap.h" />
+    <ClInclude Include="CSound.h" />
+    <ClInclude Include="CSound3D.h" />
+    <ClInclude Include="CSoundDevice.h" />
+    <ClInclude Include="CSoundManager.h" />
+    <ClInclude Include="CStaticSampler.h" />
+    <ClInclude Include="CSurface.h" />
+    <ClInclude Include="CTerrain.h" />
+    <ClInclude Include="CTextInput.h" />
+    <ClInclude Include="CTexture.h" />
+    <ClInclude Include="CTextureManager.h" />
+    <ClInclude Include="CConstantBuffer.h" />
+    <ClInclude Include="CVertexBuffer.h" />
+    <ClInclude Include="CGraphicsAdapter.h" />
+    <ClInclude Include="CVideoDevice.h" />
+    <ClInclude Include="CViewport.h" />
+    <ClInclude Include="CWavefront.h" />
+    <ClInclude Include="CWavefrontManager.h" />
+    <ClInclude Include="CWavFileHeader.h" />
+    <ClInclude Include="CWavLoader.h" />
+    <ClInclude Include="CWICLoader.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CBoundBox.cpp" />
+    <ClCompile Include="CButton.cpp" />
+    <ClCompile Include="CButtonManager.cpp" />
+    <ClCompile Include="CClient.cpp" />
+    <ClCompile Include="CCommandAllocator.cpp" />
+    <ClCompile Include="CCommandListGroup.cpp" />
+    <ClCompile Include="CConsole.cpp" />
+    <ClCompile Include="CDXGINames.cpp" />
+    <ClCompile Include="CFont.cpp" />
+    <ClCompile Include="CFontManager.cpp" />
+    <ClCompile Include="CD3D11On12.cpp" />
+    <ClCompile Include="CDepthBuffer.cpp" />
+    <ClCompile Include="CGlyphFixed.cpp" />
+    <ClCompile Include="CGlyphText.cpp" />
+    <ClCompile Include="CGlyphTextResource.cpp" />
+    <ClCompile Include="CGlyphVariable.cpp" />
+    <ClCompile Include="CGlyphVertices.cpp" />
+    <ClCompile Include="CLight.cpp" />
+    <ClCompile Include="CMap.cpp" />
+    <ClCompile Include="CPanel.cpp" />
+    <ClCompile Include="CImage.cpp" />
+    <ClCompile Include="CIndexBuffer.cpp" />
+    <ClCompile Include="CKeyboardDevice.cpp" />
+    <ClCompile Include="CKeyMap.cpp" />
+    <ClCompile Include="CMouseDevice.cpp" />
+    <ClCompile Include="CObject.cpp" />
+    <ClCompile Include="COverhead.cpp" />
+    <ClCompile Include="CPipelineState.cpp" />
+    <ClCompile Include="CDescriptorRange.cpp" />
+    <ClCompile Include="CPlayer.cpp" />
+    <ClCompile Include="CPointer.cpp" />
+    <ClCompile Include="CRenderTarget.cpp" />
+    <ClCompile Include="CRootParameter.cpp" />
+    <ClCompile Include="CRootSignature.cpp" />
+    <ClCompile Include="CShader.cpp" />
+    <ClCompile Include="CShaderBinary.cpp" />
+    <ClCompile Include="CShaderBinaryManager.cpp" />
+    <ClCompile Include="CShaderHeap.cpp" />
+    <ClCompile Include="CShadowMap.cpp" />
+    <ClCompile Include="CSound.cpp" />
+    <ClCompile Include="CSound3D.cpp" />
+    <ClCompile Include="CSoundDevice.cpp" />
+    <ClCompile Include="CSoundManager.cpp" />
+    <ClCompile Include="CStaticSampler.cpp" />
+    <ClCompile Include="CSurface.cpp" />
+    <ClCompile Include="CTerrain.cpp" />
+    <ClCompile Include="CTextInput.cpp" />
+    <ClCompile Include="CTexture.cpp" />
+    <ClCompile Include="CTextureManager.cpp" />
+    <ClCompile Include="CConstantBuffer.cpp" />
+    <ClCompile Include="CVertexBuffer.cpp" />
+    <ClCompile Include="CGraphicsAdapter.cpp" />
+    <ClCompile Include="CVideoDevice.cpp" />
+    <ClCompile Include="CViewport.cpp" />
+    <ClCompile Include="CWavefront.cpp" />
+    <ClCompile Include="CWavefrontManager.cpp" />
+    <ClCompile Include="CWavFileHeader.cpp" />
+    <ClCompile Include="CWavLoader.cpp" />
+    <ClCompile Include="CWICLoader.cpp" />
+    <ClCompile Include="GameClient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Game\shaders\collectable.ps">
+      <FileType>Document</FileType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\collectable.vs">
+      <FileType>Document</FileType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <None Include="..\..\..\Documents\website\public_html\game\lobby.html" />
+    <None Include="..\..\..\Documents\website\public_html\game\login.html" />
+    <None Include="..\..\..\Documents\website\public_html\game\video.html" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Game\shaders\common.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\image.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">main</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Library</ShaderType>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\mipMap.cp">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">main</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">main</EntryPointName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\client.ps">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\image.ps">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\map.ps">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">main</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\samplers.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\shadows.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\shadows.ps">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\static.ps">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\terrain.ps">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\client.vs">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">main</EntryPointName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\image.vs">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\map.vs">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\shadows.vs">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\static.vs">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\Game\shaders\terrain.vs">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.5</ShaderModel>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Qembed_debug</AdditionalOptions>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.5</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Game\engine.ico" />
+    <Image Include="..\Game\engines.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\Game\packages\Microsoft.Web.WebView2.1.0.3485.44\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('..\Game\packages\Microsoft.Web.WebView2.1.0.3485.44\build\native\Microsoft.Web.WebView2.targets')" />
+    <Import Project="..\Game\packages\Microsoft.Windows.ImplementationLibrary.1.0.230202.1\build\native\Microsoft.Windows.ImplementationLibrary.targets" Condition="Exists('..\Game\packages\Microsoft.Windows.ImplementationLibrary.1.0.230202.1\build\native\Microsoft.Windows.ImplementationLibrary.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\Game\packages\Microsoft.Web.WebView2.1.0.3485.44\build\native\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\Game\packages\Microsoft.Web.WebView2.1.0.3485.44\build\native\Microsoft.Web.WebView2.targets'))" />
+    <Error Condition="!Exists('..\Game\packages\Microsoft.Windows.ImplementationLibrary.1.0.230202.1\build\native\Microsoft.Windows.ImplementationLibrary.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\Game\packages\Microsoft.Windows.ImplementationLibrary.1.0.230202.1\build\native\Microsoft.Windows.ImplementationLibrary.targets'))" />
+  </Target>
+</Project>
